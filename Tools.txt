@@ -1,0 +1,24 @@
+1) What's helpful/annoying about Version Control?
+    From my experience using version control, a very helpful thing is when a tester reports a bug that
+may be in the component I am working on. Testers would report the build they are using, and the last build
+that did not have this error. I can find the revisions of the component's repo from those builds and see what
+the changes were between the builds. If the changes were irrelevant, it is a hint that the problem lurks elsewhere.
+     One annoying thing I experienced is when build coordinators change the hooks for comments, and it 
+causes commits to fail. For example, a changed/added tag is required in the comment of the commit, and the lack of
+an error description makes it difficult to resolve the error.
+
+
+2) Pros and Cons of using Docker to develop, deploy and test software?
+   This test is the first time I am exposed to Docker. I used the "play with docker" sandbox on
+their site to help develop my Dockerfile. I know that my code compiled and ran, and that is a plus. How to get to the
+output is something I have trouble with.
+   At Nokia we used something different I believe, but more or less did the same. There was a build script used
+that would pull in all the repositories and build one deliverable package. We also had a service called Jenkins that whenever
+someone commits code, it would execute a build of that repo and run unit and component tests. Any errors would be reported.
+   The only con I can think of as a developer from experience, is that I would not know if my commit for a fix would be included
+in the next build until after the fact.
+
+3) How do I choose a language for a given task? How did I choose the language for the programming exercise?
+    I use what I know. I always used and worked in C/C++. That is why I chose that for the programming exercise.
+The downside? I use a windows machine, and I bet that the use of my Dockerfile and code would be in a linux environment.
+I, as a first time user, was lucky that github converted my source code!
