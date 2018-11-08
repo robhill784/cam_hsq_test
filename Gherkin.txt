@@ -1,0 +1,33 @@
+New to this Gherkin way of defining tests. I am sure in a work environment I can get better at it.
+
+1)
+Feature: Cities in descending order
+  Have a list of cities, want them in descending order
+
+  Scenario: Input and/or Output filenames not passed in
+    Given lack of filenames passed in
+    When both files are expected
+    Then exit with an error
+
+  Scenario: Input and Output filenames passed in
+    Given a list of cities in an input file
+    When the input file is open  
+        And the list of cities are not in order
+    Then the list should be in descending alphebetical order in the output file
+
+2)
+The first scenario is pretty concrete. The program requirements state that for an input file, there should be an output file.
+These arguments, i assume, need to be passed in (What file are we openening? Where should the output be stored?). With that
+in mind, the test and that behavior should not change.
+
+The second scenario, as well as the feature, could be made more generic. I did see in the requirements
+that "your program should handle other content as well", so city names might not be the only thing passed in.
+
+  Scenario: Input and Output filenames passed in
+    Given a list of things in an input file
+    When the input file is open  
+        And the list of things is in some order
+    Then the list should be in descending order in the output file
+    
+ In any case, the behaviour of the program outputting a list of things in descending order does not change, even if the program
+ expands what it can list in descending order.
