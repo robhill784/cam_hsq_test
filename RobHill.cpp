@@ -13,7 +13,6 @@ Printing the sorted name is a recursive depth first traversal
 */
 
 #include <stdio.h>
-#include <tchar.h>
 #include <iostream>
 #include <fstream>
 #include <string>
