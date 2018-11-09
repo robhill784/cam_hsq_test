@@ -1,0 +1,23 @@
+
+1) What's the right role for QA in software development process?
+    I am not sure what this question is asking. I think QA should be in any role from coder, designer, testers and management.
+    
+2) As a QA person, I have 2 weeks before the team writes code. What do I do?
+   I would sit in any and all meetings that goes over specifications and requirements. I would take notes and collaborate
+with other developers/designers to gather as much information as I can. I would use this information to compile test plans
+and share it with the developers. I would then have a feedback/edit cycle to ensure everyone is on the same page about quality
+expecations before coding starts.
+
+3) Appropriate use for automated testing? Manual testing?
+   For automated testing, from my experience at Nokia, is when we can
+      simulate interaction between 2 components
+      simulate interaction between a component and HWAPI
+      simulate HW topology and HW topology changes
+   Manual testing would be used for testing actual software/hardware interactions between radios and user devices. Anything that
+cannot be simulated via software.
+   
+4) Dev team added new features and refactored code for old features. I am in charge of integration testing. What do I test?
+   Since this is integration, I would test if the interactions between the relevant components still work.
+      Was there an interface change of relevant components?
+      Was there a change to the way relevant components interact via messages?
+   I would just test the interaction between the changed component and the components it would interact with directly.
